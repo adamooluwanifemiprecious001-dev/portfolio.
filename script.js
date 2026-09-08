@@ -36,3 +36,53 @@
     });
 
    alert('Welcome to my portfolio!');
+// ==========================================
+// 📱 HAMBURGER MENU FOR MOBILE
+// ==========================================
+
+// Find elements
+const navbar = document.querySelector('.navbar');
+const navLinks = document.querySelector('.nav-links');
+
+// Only run if navbar and navLinks exist
+if (navbar && navLinks) {
+    
+    // Check if hamburger already exists
+    let hamburger = document.querySelector('.hamburger');
+    
+    // If not, create it
+    if (!hamburger) {
+        hamburger = document.createElement('button');
+        hamburger.className = 'hamburger';
+        hamburger.innerHTML = '☰';
+        hamburger.setAttribute('aria-label', 'Toggle menu');
+        navbar.insertBefore(hamburger, navLinks);
+    }
+    
+    // Toggle menu when hamburger is clicked
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+    
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+        });
+    });
+    
+    // Show/hide hamburger based on screen size
+    function checkScreenSize() {
+        if (window.innerWidth > 768) {
+            hamburger.style.display = 'none';
+            navLinks.style.display = 'flex';
+        } else {
+            hamburger.style.display = 'block';
+            navLinks.style.display = 'none';
+        }
+    }
+    
+    // Check on load and on resize
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+}
