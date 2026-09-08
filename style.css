@@ -272,24 +272,8 @@ footer {
     margin-top: 2rem;
 }
 /* ==========================================
-   📱 MOBILE RESPONSIVENESS
+   📱 MOBILE RESPONSIVENESS (CSS ONLY)
    ========================================== */
-
-/* ---------- HAMBURGER MENU BUTTON ---------- */
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #333;
-    padding: 0 10px;
-    transition: 0.3s;
-}
-
-.hamburger:hover {
-    color: #4a6cf7;
-}
 
 /* ---------- TABLETS (max 1024px) ---------- */
 @media (max-width: 1024px) {
@@ -305,7 +289,7 @@ footer {
 /* ---------- MOBILE PHONES (max 768px) ---------- */
 @media (max-width: 768px) {
     
-    /* === HERO SECTION === */
+    /* HERO SECTION */
     .hero {
         flex-direction: column;
         text-align: center;
@@ -324,61 +308,25 @@ footer {
     .hero-text h2 {
         font-size: 1.3rem;
         text-align: center;
-        margin: 0 0 0.5rem 0;
-        display: block;
     }
     
     .hero-text p {
         font-size: 1rem;
         margin: 0 auto;
-        max-width: 100%;
     }
     
-    /* === NAVIGATION === */
-    .navbar {
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-    
-    .nav-links {
-        flex-direction: column;
-        width: 100%;
-        gap: 0.8rem;
-        padding: 1rem 0;
-        display: none;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    }
-    
-    .nav-links.active {
-        display: flex;
-    }
-    
-    .nav-links a {
-        font-size: 1rem;
-        padding: 0.5rem;
-        display: block;
-        text-align: center;
-    }
-    
-    /* === SHOW HAMBURGER ON MOBILE === */
-    .hamburger {
-        display: block !important;
-    }
-    
-    /* === HEADINGS === */
+    /* HEADINGS */
     h2 {
         font-size: 1.5rem;
     }
     
-    /* === SECTIONS === */
+    /* SECTIONS */
     section {
         margin: 2rem auto;
         padding: 0 15px;
     }
     
-    /* === PROJECTS === */
+    /* PROJECTS - 1 COLUMN */
     .projects-container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -389,7 +337,7 @@ footer {
     }
     
     .project-card h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     .project-button {
@@ -397,7 +345,7 @@ footer {
         font-size: 0.9rem;
     }
     
-    /* === EXPERIENCE & EDUCATION === */
+    /* EXPERIENCE & EDUCATION */
     .experience-item,
     .education-item {
         padding: 1rem 1.2rem;
@@ -408,7 +356,7 @@ footer {
         font-size: 1.1rem;
     }
     
-    /* === TESTIMONIALS === */
+    /* TESTIMONIALS - 1 COLUMN */
     .testimonial-container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -418,7 +366,7 @@ footer {
         padding: 1.2rem;
     }
     
-    /* === BLOGS === */
+    /* BLOGS */
     .blog {
         padding: 1rem 1.2rem;
     }
@@ -427,19 +375,10 @@ footer {
         font-size: 1.1rem;
     }
     
-    /* === FOOTER === */
+    /* FOOTER */
     footer {
         padding: 1.5rem 0;
         font-size: 0.9rem;
-    }
-    
-    /* === BACK TO TOP BUTTON === */
-    .back-to-top {
-        width: 45px !important;
-        height: 45px !important;
-        font-size: 1.5rem !important;
-        bottom: 20px !important;
-        right: 20px !important;
     }
 }
 
