@@ -343,3 +343,299 @@ footer {
         display: none;
     }
 }
+/* ==========================================
+   📱 MOBILE RESPONSIVENESS
+   ========================================== */
+
+/* ---------- TABLETS & SMALL LAPTOPS (max 1024px) ---------- */
+@media (max-width: 1024px) {
+    .hero {
+        gap: 2rem;
+        padding: 0 1.5rem;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .projects-container {
+        flex-wrap: wrap;
+    }
+
+    .project-card {
+        flex: 1 1 45%;
+    }
+}
+
+/* ---------- MOBILE PHONES (max 768px) ---------- */
+@media (max-width: 768px) {
+
+    /* === BODY === */
+    body {
+        padding: 0 12px;
+    }
+
+    /* === HEADER / NAVIGATION === */
+    header {
+        padding: 0.6rem 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 42px;
+        height: 42px;
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+        padding: 0.5rem 0;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    /* === HERO SECTION === */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        margin: 1.5rem auto;
+        padding: 0 1rem;
+    }
+
+    .hero-image img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    /* === SOCIAL ICONS === */
+    .social-section {
+        text-align: center;
+        margin: 1rem auto;
+        padding: 0;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 0.6rem;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* === HEADINGS === */
+    h2 {
+        font-size: 1.5rem;
+        display: block;
+        text-align: center;
+    }
+
+    /* === SECTIONS === */
+    section {
+        margin: 2rem auto;
+        padding: 0 10px;
+    }
+
+    /* === EXPERIENCE & EDUCATION === */
+    .experience-item,
+    .education-item {
+        padding: 1rem 1.2rem;
+        margin-bottom: 1rem;
+        border-left-width: 4px;
+    }
+
+    .experience-item h3,
+    .education-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .experience-item p,
+    .education-item p {
+        font-size: 0.95rem;
+    }
+
+    /* === PROJECTS - STACK TO 1 COLUMN === */
+    .projects-container {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 1.2rem;
+    }
+
+    .project-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-card p {
+        font-size: 0.95rem;
+    }
+
+    .project-button {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+    }
+
+    /* === TESTIMONIALS - 1 COLUMN === */
+    .testimonial-container {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .testimonial {
+        padding: 1.2rem;
+    }
+
+    .testimonial p {
+        font-size: 0.95rem;
+    }
+
+    /* === BLOGS === */
+    .blog {
+        padding: 1.2rem 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .blog h3 {
+        font-size: 1.1rem;
+    }
+
+    .blog p {
+        font-size: 0.95rem;
+    }
+
+    /* === FOOTER === */
+    footer {
+        padding: 1.5rem 0;
+        font-size: 0.9rem;
+    }
+
+    /* === BACK TO TOP BUTTON === */
+    #backToTop,
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* ---------- SMALL PHONES (max 480px) ---------- */
+@media (max-width: 480px) {
+
+    body {
+        padding: 0 8px;
+    }
+
+    .hero-image img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.1rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .nav-links {
+        gap: 0.5rem;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    .social-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .social-icon svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .experience-item,
+    .education-item,
+    .blog,
+    .testimonial {
+        padding: 0.9rem 1rem;
+    }
+
+    .experience-item h3,
+    .education-item h3,
+    .blog h3,
+    .project-card h3 {
+        font-size: 1rem;
+    }
+
+    .project-card {
+        padding: 1rem;
+    }
+
+    .project-button {
+        font-size: 0.85rem;
+        padding: 0.35rem 0.9rem;
+    }
+
+    .logo {
+        width: 38px;
+        height: 38px;
+        font-size: 1.3rem;
+    }
+}
