@@ -145,6 +145,7 @@ section {
     display: flex;
     gap: 0.8rem;
     justify-content: flex-start; 
+    margin-top: 1rem;
 }
 
 .social-icon {
